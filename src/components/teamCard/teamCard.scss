@@ -1,0 +1,80 @@
+$borderColor:#E4E7EC;
+
+.teamDiv {
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    width: 307px;
+    height: auto;
+    margin: 8px 7px;
+}
+
+.cardTopContent {
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleDiv {
+    display: flex;
+}
+
+.teamImage {
+    border-radius: 5px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    font-family: ProximaNova;
+    margin-left: 5px;
+}
+
+.description {
+    margin: 10px 0px;
+}
+
+.line {
+    overflow: hidden;
+    line-height: 1.3rem;
+    max-height: 3rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #565656;
+}
+
+.bottomContent {
+    border-top: 1px solid $borderColor;
+    padding: 20px 15px;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.campaignDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.leadDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardBottomPara {
+    margin-left: 5px;
+}

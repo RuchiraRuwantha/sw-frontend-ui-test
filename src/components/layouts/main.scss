@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    background-color: #E5E5E5;
+}
+
+.main {
+    width: 100%;
+}
+
+.sidebarDiv {
+    display: flex;
+    background-color: #042235;
+    width: 60px;
+    height: 100vh;
+}
+
+.miniSidebarDiv {
+    display: none;
+}
+
+@media screen and (max-width:426px) {
+    .sidebarDiv {
+        display: none;
+    }
+
+    .miniSidebarDiv {
+        position: fixed;
+        display: block;
+        width: 100%;
+        /* height: 60px; */
+        background-color: #042235;
+        bottom: 0px;
+    }
+
+    .container {
+        margin-bottom: 65px;
+    }
+}

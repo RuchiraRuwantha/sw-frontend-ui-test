@@ -1,0 +1,184 @@
+$navbarItemActive:#0083E3;
+$whiteColor:#FFFFFF;
+
+.tabs {
+    width: 100%;
+    height: 100%;
+    color: #E8F0F2;
+    background-color: #E5E5E5;
+}
+
+.nav {
+    width: 60%;
+    margin: 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.nav li {
+    width: 15%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (max-width:769px) {
+    .nav {
+        width: 50%;
+    }
+
+    .nav li {
+        padding: 1rem 0;
+        width: 22%;
+    }
+}
+
+.nav li:hover {
+    border-bottom: 3px solid $navbarItemActive;
+}
+
+.nav li.active {
+    color: $navbarItemActive;
+    border-bottom: 3px solid $navbarItemActive;
+}
+
+.activityDiv {
+    background-color: $whiteColor;
+    margin: 0 0 0 20px;
+    height: fit-content;
+}
+
+.miniActivityDiv {
+    display: none;
+}
+
+.topContent {
+    width: 100%;
+    background-color: $whiteColor;
+}
+
+.headerDiv {
+    margin: 0rem 0rem 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    color: #1A1919;
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.createBtn {
+    background-color: #40D2BF;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.createBtn>img {
+    margin-right: 10px;
+}
+
+.createBtn>p {
+    width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.search {
+    color: #999999;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.tabContentContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 0rem 1.5rem 1.5rem;
+}
+
+.outlet {
+    width: 85%;
+}
+
+.miniSearch {
+    display: none;
+}
+
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem;
+}
+
+@media screen and (max-width:426px) {
+    .tabs {
+        margin-top: 79px;
+    }
+
+    .activityDiv {
+        display: none;
+    }
+
+    .miniActivityDiv {
+        display: block;
+        background-color: $whiteColor;
+        margin-top: 1rem;
+        padding-bottom: 1px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .nav {
+        padding-left: 2.5rem;
+        width: 80%;
+    }
+
+    .tabContentContainer {
+        margin: 0rem 0rem 1.5rem;
+    }
+
+    .miniSearch {
+        color: #999999;
+        margin: 0 1rem;
+        padding: 1rem;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,34 @@
+.TabContent {
+    font-size: 2rem;
+    text-align: center;
+    color: #565656;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 30px;
+}
+
+.tabContentDiv {
+    background-color: white;
+    height: 100%;
+}
+
+.tabContentTitle {
+    padding: 30px;
+    color: #343434;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+@media screen and (max-width:426px) {
+    .tabContentDiv{
+        height: auto;
+        padding-bottom: 1px;
+    }
+
+    .TabContent {        
+        margin: 20px;
+    }
+}

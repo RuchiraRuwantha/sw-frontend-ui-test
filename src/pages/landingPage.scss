@@ -1,0 +1,34 @@
+.tabsContent {
+    display: flex;
+}
+
+.pageContent {
+    display: flex;
+}
+
+.contentHeader {
+    padding: 1.5rem 0rem 1.5rem 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    color: #1A1919;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.pageTitle {
+    display: flex;
+    align-items: center;
+}
+
+.pageTitle>p {
+    margin-left: 10px;
+}
+
+.commonContentDiv {
+    margin: 1.5rem;
+    background-color: white;
+    height: 25rem;
+}

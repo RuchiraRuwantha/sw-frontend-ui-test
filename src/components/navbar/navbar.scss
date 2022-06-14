@@ -1,0 +1,103 @@
+.navbarDiv {
+    background-color: white;
+    border-bottom: 2px solid #E2E2E2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide {
+    display: flex;
+}
+
+.narwhal {
+    display: flex;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    font-size: 18px;
+    border-right: 2px solid #E2E2E2;
+}
+
+.narwhal>p {
+    color: #999999;
+    font-weight: 500;
+}
+
+.tabname {
+    display: flex;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    font-size: 18px;
+}
+
+.tabname>p {
+    color: #000000;
+    font-weight: 400;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activityIcon {
+    display: none;
+}
+
+.notification {
+    display: flex;
+    padding: 1.5rem 0.5rem 1.5rem 2rem;
+}
+
+.notification>div {
+    width: 18px;
+    height: 18px;
+    right: 11px;
+    top: -9px;
+    position: relative;
+    border: 3px solid #FFFFFF;
+    background-color: #2995DA;
+    font-size: 10px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 20;
+    line-height: 0.75rem;
+}
+
+.userDiv {
+    display: flex;
+    padding: 1.25rem 1.5rem 1.25rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.userAvatar {
+    border-radius: 18px;
+}
+
+@media screen and (max-width:426px) {
+    .narwhal{
+        padding: 1.5rem 1rem;
+    }
+    .tabname {
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .activityIcon {
+        display: block;
+    }
+
+    .navbarDiv {
+        position: fixed;
+    }
+    
+    .notification {
+        padding: 1.5rem 0rem 1.5rem 1rem;
+    }
+
+    .userDiv {        
+        padding: 1.25rem 2.5rem 1.25rem 0rem;        
+    }
+}
