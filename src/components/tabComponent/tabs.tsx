@@ -91,10 +91,7 @@ const Tabs = () => {
               return null;
             }
             )}
-          </TabContent>
-          {/* <div className="miniActivityDiv">
-            {data && data.activities.length > 0 && <ActivityTile activities={data.activities} />}
-          </div> */}
+          </TabContent>          
         </div>
         <div className="activityDiv">
           {data && data.activities.length > 0 && <ActivityTile activities={data.activities} />}

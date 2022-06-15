@@ -47,7 +47,6 @@ function SideBar() {
                     <img src={iconHelp} alt="icon-help" />
                 </div>
             </div>
-            {/* <div className="behind-the-scenes"></div> */}
         </div>
     )
 }
