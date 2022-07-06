@@ -16,7 +16,7 @@ const Tabs = () => {
   const [data, setData] = useState<any>();
 
   useEffect(() => {
-    fetch('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220625%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220625T062930Z&X-Amz-Expires=86400&X-Amz-Signature=965b493e1bb3afead80012454c8e8f210b62acc9dc07bb644d7d12b6b5eb1574&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject')
+    fetch('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220706T184214Z&X-Amz-Expires=86400&X-Amz-Signature=0cf21040e3249652e6eb3c3dad9c16d2f49a4aff70439ef71c2a1b849f7c6f82&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject')
       .then(res => res.text())
       .then(results => {
         //json in the response is not properly formatted. To format it correctly, a custom function is being used.
