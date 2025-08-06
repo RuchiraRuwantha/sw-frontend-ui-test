@@ -16,7 +16,7 @@ const Navbar = () => {
     const location = useLocation();
 
     useEffect(() => {
-        fetch('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220614%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220614T121223Z&X-Amz-Expires=86400&X-Amz-Signature=a1f8f3bdbf9dabc3a1c4917f1f5450d5533c44b2cb788004a033a441d75fb9b7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject')
+        fetch('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220715%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220715T193135Z&X-Amz-Expires=86400&X-Amz-Signature=c3151a2b4b405128285d6f7455cdb82f679b71440736e5f1b0d18cb4a2d3a12c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject')
             .then(res => res.text())
             .then(results => {
                 //json in the response is not properly formatted. To format it correctly, a custom function is being used.
